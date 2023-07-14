@@ -1,4 +1,6 @@
 <!-- Start SDK Example Usage -->
+
+
 ```typescript
 import { Petstore } from "Petstore";
 import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
