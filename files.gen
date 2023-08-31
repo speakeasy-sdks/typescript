@@ -40,3 +40,4 @@ docs/models/operations/findpetsresponse.md
 docs/models/shared/pet.md
 docs/models/shared/errort.md
 docs/models/shared/newpet.md
+.gitattributes
