@@ -36,13 +36,12 @@ export type SDKProps = {
 
 export class SDKConfiguration {
     defaultClient: AxiosInstance;
-    securityClient: AxiosInstance;
     serverURL: string;
     serverDefaults: any;
     language = "typescript";
     openapiDocVersion = "1.0.0";
-    sdkVersion = "1.16.1";
-    genVersion = "2.93.0";
+    sdkVersion = "1.17.0";
+    genVersion = "2.96.3";
 
     public constructor(init?: Partial<SDKConfiguration>) {
         Object.assign(this, init);
@@ -64,11 +63,8 @@ export class Petstore {
         }
 
         const defaultClient = props?.defaultClient ?? axios.create({ baseURL: serverURL });
-        const securityClient = defaultClient;
-
         this.sdkConfiguration = new SDKConfiguration({
             defaultClient: defaultClient,
-            securityClient: securityClient,
             serverURL: serverURL,
         });
     }
@@ -99,9 +95,7 @@ export class Petstore {
                 throw new Error(`Error serializing request body, cause: ${e.message}`);
             }
         }
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...reqBodyHeaders, ...config?.headers };
         if (reqBody == null || Object.keys(reqBody).length === 0)
             throw new Error("request body is required");
@@ -179,9 +173,7 @@ export class Petstore {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/pets/{id}", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -246,9 +238,7 @@ export class Petstore {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = utils.generateURL(baseURL, "/pets/{id}", req);
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         headers["Accept"] = "application/json";
 
@@ -327,9 +317,7 @@ export class Petstore {
             this.sdkConfiguration.serverDefaults
         );
         const url: string = baseURL.replace(/\/$/, "") + "/pets";
-
         const client: AxiosInstance = this.sdkConfiguration.defaultClient;
-
         const headers = { ...config?.headers };
         const queryParams: string = utils.serializeQueryParams(req);
         headers["Accept"] = "application/json";
