@@ -137,7 +137,7 @@ const sdk = new Petstore();
 sdk.petstore.findPets({
   limit: 891773,
   tags: [
-    "delectus",
+    "ipsa",
   ],
 }).then((res: FindPetsResponse) => {
   if (res.statusCode == 200) {

@@ -1,7 +1,5 @@
 # Pet
 
-pet response
-
 
 ## Fields
 

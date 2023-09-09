@@ -1,7 +1,5 @@
 # NewPet
 
-Pet to add to the store
-
 
 ## Fields
 

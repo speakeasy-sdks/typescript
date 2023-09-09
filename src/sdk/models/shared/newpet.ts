@@ -5,9 +5,6 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose } from "class-transformer";
 
-/**
- * Pet to add to the store
- */
 export class NewPet extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "name" })
