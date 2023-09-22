@@ -28,7 +28,7 @@ import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.addPet({
-  name: "Dallas Kassulke",
+  name: "Dr. Valerie Toy",
   tag: "suscipit",
 }).then((res: AddPetResponse) => {
   if (res.statusCode == 200) {
@@ -63,7 +63,7 @@ import { DeletePetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.deletePet({
-  id: 437587,
+  id: 477665,
 }).then((res: DeletePetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -97,7 +97,7 @@ import { FindPetByIdResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.findPetById({
-  id: 297534,
+  id: 791725,
 }).then((res: FindPetByIdResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -135,9 +135,9 @@ import { FindPetsResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.findPets({
-  limit: 891773,
+  limit: 812169,
   tags: [
-    "ipsa",
+    "voluptatum",
   ],
 }).then((res: FindPetsResponse) => {
   if (res.statusCode == 200) {
