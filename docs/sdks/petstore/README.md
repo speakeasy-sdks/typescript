@@ -29,8 +29,8 @@ import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.addPet({
-  name: "Dr. Valerie Toy",
-  tag: "suscipit",
+  name: "magnetic about",
+  tag: "lavender optimist Coupe",
 }).then((res: AddPetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -64,7 +64,7 @@ import { DeletePetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.deletePet({
-  id: 477665,
+  id: 441876,
 }).then((res: DeletePetResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -98,7 +98,7 @@ import { FindPetByIdResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.findPetById({
-  id: 791725,
+  id: 674361,
 }).then((res: FindPetByIdResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -136,9 +136,9 @@ import { FindPetsResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.petstore.findPets({
-  limit: 812169,
+  limit: 509016,
   tags: [
-    "voluptatum",
+    "Alaska",
   ],
 }).then((res: FindPetsResponse) => {
   if (res.statusCode == 200) {

@@ -8,8 +8,8 @@ import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.addPet({
-  name: "Terrence Rau",
-  tag: "nulla",
+  name: "magnetic about",
+  tag: "lavender optimist Coupe",
 }).then((res: AddPetResponse) => {
   if (res.statusCode == 200) {
     // handle response

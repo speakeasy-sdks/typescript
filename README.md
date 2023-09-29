@@ -25,8 +25,8 @@ import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
 const sdk = new Petstore();
 
 sdk.addPet({
-  name: "Dallas Kassulke",
-  tag: "suscipit",
+  name: "magnetic about",
+  tag: "lavender optimist Coupe",
 }).then((res: AddPetResponse) => {
   if (res.statusCode == 200) {
     // handle response
