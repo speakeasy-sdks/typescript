@@ -24,18 +24,18 @@ Creates a new pet in the store. Duplicates are allowed
 
 ```typescript
 import { Petstore } from "Petstore";
-import { AddPetResponse } from "Petstore/dist/sdk/models/operations";
 
-const sdk = new Petstore();
+(async() => {
+  const sdk = new Petstore();
 
-sdk.petstore.addPet({
-  name: "magnetic about",
-  tag: "lavender optimist Coupe",
-}).then((res: AddPetResponse) => {
+  const res = await sdk.petstore.addPet({
+    name: "magnetic about",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -59,17 +59,18 @@ deletes a single pet based on the ID supplied
 
 ```typescript
 import { Petstore } from "Petstore";
-import { DeletePetResponse } from "Petstore/dist/sdk/models/operations";
 
-const sdk = new Petstore();
+(async() => {
+  const sdk = new Petstore();
 
-sdk.petstore.deletePet({
-  id: 441876,
-}).then((res: DeletePetResponse) => {
+  const res = await sdk.petstore.deletePet({
+    id: 441876,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -93,17 +94,18 @@ Returns a user based on a single ID, if the user does not have access to the pet
 
 ```typescript
 import { Petstore } from "Petstore";
-import { FindPetByIdResponse } from "Petstore/dist/sdk/models/operations";
 
-const sdk = new Petstore();
+(async() => {
+  const sdk = new Petstore();
 
-sdk.petstore.findPetById({
-  id: 674361,
-}).then((res: FindPetByIdResponse) => {
+  const res = await sdk.petstore.findPetById({
+    id: 674361,
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
@@ -131,20 +133,20 @@ Sed tempus felis lobortis leo pulvinar rutrum. Nam mattis velit nisl, eu condime
 
 ```typescript
 import { Petstore } from "Petstore";
-import { FindPetsResponse } from "Petstore/dist/sdk/models/operations";
 
-const sdk = new Petstore();
+(async() => {
+  const sdk = new Petstore();
 
-sdk.petstore.findPets({
-  limit: 509016,
-  tags: [
-    "Alaska",
-  ],
-}).then((res: FindPetsResponse) => {
+  const res = await sdk.petstore.findPets({
+    tags: [
+      "hacking",
+    ],
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 
 ### Parameters
