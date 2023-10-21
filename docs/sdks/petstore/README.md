@@ -29,7 +29,7 @@ import { Petstore } from "Petstore";
   const sdk = new Petstore();
 
   const res = await sdk.petstore.addPet({
-    name: "magnetic about",
+    name: "string",
   });
 
   if (res.statusCode == 200) {
@@ -139,7 +139,7 @@ import { Petstore } from "Petstore";
 
   const res = await sdk.petstore.findPets({
     tags: [
-      "hacking",
+      "string",
     ],
   });
 
