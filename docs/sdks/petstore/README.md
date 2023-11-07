@@ -28,9 +28,10 @@ import { Petstore } from "Petstore";
 (async() => {
   const sdk = new Petstore();
 
-  const res = await sdk.petstore.addPet({
+  const res = await sdk.addPet({
     name: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -63,9 +64,10 @@ import { Petstore } from "Petstore";
 (async() => {
   const sdk = new Petstore();
 
-  const res = await sdk.petstore.deletePet({
+  const res = await sdk.deletePet({
     id: 441876,
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -98,9 +100,10 @@ import { Petstore } from "Petstore";
 (async() => {
   const sdk = new Petstore();
 
-  const res = await sdk.petstore.findPetById({
+  const res = await sdk.findPetById({
     id: 674361,
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -137,11 +140,12 @@ import { Petstore } from "Petstore";
 (async() => {
   const sdk = new Petstore();
 
-  const res = await sdk.petstore.findPets({
+  const res = await sdk.findPets({
     tags: [
       "string",
     ],
   });
+
 
   if (res.statusCode == 200) {
     // handle response

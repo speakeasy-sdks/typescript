@@ -7,7 +7,7 @@ import { Petstore } from "Petstore";
 (async () => {
     const sdk = new Petstore();
 
-    const res = await sdk.petstore.addPet({
+    const res = await sdk.addPet({
         name: "string",
     });
 

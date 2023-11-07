@@ -3,7 +3,7 @@
  */
 
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
-import * as shared from "../shared";
+import * as shared from "../../../sdk/models/shared";
 import { AxiosResponse } from "axios";
 
 export class FindPetsRequest extends SpeakeasyBase {
@@ -34,12 +34,6 @@ export class FindPetsResponse extends SpeakeasyBase {
     error?: shared.ErrorT;
 
     /**
-     * pet response
-     */
-    @SpeakeasyMetadata({ elemType: shared.Pet })
-    pets?: shared.Pet[];
-
-    /**
      * HTTP response status code for this operation
      */
     @SpeakeasyMetadata()
@@ -50,4 +44,10 @@ export class FindPetsResponse extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
+
+    /**
+     * pet response
+     */
+    @SpeakeasyMetadata({ elemType: shared.Pet })
+    classes?: shared.Pet[];
 }

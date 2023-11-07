@@ -22,12 +22,12 @@ src/sdk/models/operations/addpet.ts
 src/sdk/models/operations/deletepet.ts
 src/sdk/models/operations/findpetbyid.ts
 src/sdk/models/operations/findpets.ts
-src/sdk/models/operations/index.ts
 src/sdk/models/shared/pet.ts
 src/sdk/models/shared/error.ts
 src/sdk/models/shared/newpet.ts
-src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
+src/sdk/models/operations/index.ts
+src/sdk/models/shared/index.ts
 USAGE.md
 docs/models/operations/addpetresponse.md
 docs/models/operations/deletepetrequest.md
