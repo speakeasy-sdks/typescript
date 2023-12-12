@@ -25,7 +25,7 @@ Creates a new pet in the store. Duplicates are allowed
 ```typescript
 import { Petstore } from "Petstore";
 
-(async() => {
+async function run() {
   const sdk = new Petstore();
 
   const res = await sdk.addPet({
@@ -35,7 +35,9 @@ import { Petstore } from "Petstore";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -64,7 +66,7 @@ deletes a single pet based on the ID supplied
 ```typescript
 import { Petstore } from "Petstore";
 
-(async() => {
+async function run() {
   const sdk = new Petstore();
 
   const res = await sdk.deletePet({
@@ -74,7 +76,9 @@ import { Petstore } from "Petstore";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -103,7 +107,7 @@ Returns a user based on a single ID, if the user does not have access to the pet
 ```typescript
 import { Petstore } from "Petstore";
 
-(async() => {
+async function run() {
   const sdk = new Petstore();
 
   const res = await sdk.findPetById({
@@ -113,7 +117,9 @@ import { Petstore } from "Petstore";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -146,7 +152,7 @@ Sed tempus felis lobortis leo pulvinar rutrum. Nam mattis velit nisl, eu condime
 ```typescript
 import { Petstore } from "Petstore";
 
-(async() => {
+async function run() {
   const sdk = new Petstore();
 
   const res = await sdk.findPets({
@@ -158,7 +164,9 @@ import { Petstore } from "Petstore";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

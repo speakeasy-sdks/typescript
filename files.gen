@@ -28,7 +28,6 @@ src/sdk/models/shared/newpet.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/addpetresponse.md
 docs/sdk/models/operations/deletepetrequest.md
 docs/sdk/models/operations/deletepetresponse.md
@@ -40,4 +39,5 @@ docs/sdk/models/shared/pet.md
 docs/sdk/models/shared/errort.md
 docs/sdk/models/shared/newpet.md
 docs/sdks/petstore/README.md
+USAGE.md
 .gitattributes
