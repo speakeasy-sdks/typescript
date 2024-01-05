@@ -1,0 +1,60 @@
+lockVersion: 2.0.0
+id: b73fa57d-1051-4215-8b63-6ca3a2eae349
+management:
+  docChecksum: 64ffedccb78bd3330d4ef93710cc145b
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 2.1.1
+  configChecksum: 554513de047b91699e1ee6b631c3929f
+  repoURL: https://github.com/speakeasy-sdks/typescript.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/typescript
+features:
+  typescript:
+    core: 3.4.1
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/addpet.ts
+  - src/sdk/models/operations/deletepet.ts
+  - src/sdk/models/operations/findpetbyid.ts
+  - src/sdk/models/operations/findpets.ts
+  - src/sdk/models/shared/pet.ts
+  - src/sdk/models/shared/error.ts
+  - src/sdk/models/shared/newpet.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
+  - docs/sdk/models/operations/addpetresponse.md
+  - docs/sdk/models/operations/deletepetrequest.md
+  - docs/sdk/models/operations/deletepetresponse.md
+  - docs/sdk/models/operations/findpetbyidrequest.md
+  - docs/sdk/models/operations/findpetbyidresponse.md
+  - docs/sdk/models/operations/findpetsrequest.md
+  - docs/sdk/models/operations/findpetsresponse.md
+  - docs/sdk/models/shared/pet.md
+  - docs/sdk/models/shared/errort.md
+  - docs/sdk/models/shared/newpet.md
+  - docs/sdks/petstore/README.md
+  - USAGE.md
+  - .gitattributes
