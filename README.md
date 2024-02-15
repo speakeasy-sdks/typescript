@@ -28,7 +28,7 @@ async function run() {
     const sdk = new Petstore();
 
     const res = await sdk.addPet({
-        name: "string",
+        name: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -81,7 +81,7 @@ async function run() {
     let res;
     try {
         res = await sdk.addPet({
-            name: "string",
+            name: "<value>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -124,7 +124,7 @@ async function run() {
     });
 
     const res = await sdk.addPet({
-        name: "string",
+        name: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -149,7 +149,7 @@ async function run() {
     });
 
     const res = await sdk.addPet({
-        name: "string",
+        name: "<value>",
     });
 
     if (res.statusCode == 200) {
